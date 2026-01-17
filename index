@@ -1,0 +1,75 @@
+index.html
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>BioBytee Analytics Extractor — App Home</title>
+  <meta name="description" content="App home page for OAuth verification: BioBytee Analytics Extractor (YouTube channel analytics export for the channel owner)." />
+  <style>
+    :root{
+      --bg:#FFFFFF;
+      --text:#111827;
+      --muted:#4B5563;
+      --card:#F9FAFB;
+      --border:#E5E7EB;
+      --link:#1D4ED8;
+    }
+    body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;line-height:1.5}
+    .wrap{max-width:860px;margin:0 auto;padding:32px 18px}
+    .card{background:var(--card);border:1px solid var(--border);border-radius:16px;padding:18px 18px}
+    h1{margin:0 0 8px 0;font-size:28px}
+    h2{margin:22px 0 8px 0;font-size:18px}
+    p{margin:8px 0}
+    a{color:var(--link)}
+    ul{margin:8px 0 8px 18px}
+    code{background:#EEF2FF;padding:2px 6px;border-radius:8px}
+    .muted{color:var(--muted)}
+    .footer{margin-top:18px;font-size:14px;color:var(--muted)}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>BioBytee Analytics Extractor</h1>
+    <p class="muted">App Home Page (OAuth verification)</p>
+
+    <div class="card">
+      <h2>What this app does</h2>
+      <p>
+        BioBytee Analytics Extractor is a personal tool that helps a YouTube creator export
+        read-only channel and video analytics for their own content into CSV/Parquet files
+        for analysis and model training.
+      </p>
+
+      <h2>How it works</h2>
+      <ul>
+        <li>Uses Google OAuth to request access to the YouTube Analytics API and YouTube Data API.</li>
+        <li>Fetches analytics for videos on the authenticated user’s own channel.</li>
+        <li>Exports metrics locally (for example, to Google Drive / a local file store) for the user’s analysis.</li>
+      </ul>
+
+      <h2>Data & permissions</h2>
+      <p>
+        This app requests only the permissions needed to read analytics and channel/video metadata.
+        Data is used only for the functionality described above and as disclosed in the Privacy Policy.
+      </p>
+
+      <h2>Policies</h2>
+      <ul>
+        <li><a href="/privacy/">Privacy Policy</a></li>
+        <li><a href="/terms/">Terms of Service</a></li>
+      </ul>
+
+      <h2>Contact</h2>
+      <p>
+        Support email: <a href="mailto:YOUR_EMAIL_HERE">YOUR_EMAIL_HERE</a><br/>
+        Owner: YOUR_NAME_OR_COMPANY
+      </p>
+
+      <p class="footer">
+        Not affiliated with Google or YouTube. Last updated: 2026-01-17
+      </p>
+    </div>
+  </div>
+</body>
+</html>
